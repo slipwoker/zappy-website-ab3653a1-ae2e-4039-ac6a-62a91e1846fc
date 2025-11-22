@@ -1,0 +1,499 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>אודות בית כנסת אחדות — נסיעות קהילתיות לאירופה</title>
+<meta name="description" content="הכירו את בית כנסת אחדות - קהילה חמה ומגובשת המארגנת נסיעות קהילתיות לאירופה מישראל. למעלה מעשור של חוויות משותפות ומסורת של טיולים שנתיים!">
+<meta name="keywords" content="בית כנסת אחדות טיול שנתי, נסיעות קהילתיות לאירופה מישראל, טיול מאורגן לאוסטריה לבית כנסת, קהילה יהודית">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: static;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'ab3653a1-ae2e-4039-ac6a-62a91e1846fc',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+<nav class="navbar" id="navbar">
+<div class="container nav-container">
+<div class="nav-brand">
+<a href="/" class="logo-link">
+<img src="assets/logo.webp" alt="בית הכנסת אחדות" class="logo" />
+</a>
+</div>
+<button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
+<svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+</svg>
+<svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+<path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+</svg>
+</button>
+<button class="phone-header-btn" aria-label="התקשרו אלינו">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+</svg>
+</button>
+<ul class="nav-menu" id="navMenu">
+<li><a href="/trip-details">פרטי הנסיעה</a></li>
+<li><a href="/about">אודות</a></li>
+</ul>
+<div class="nav-cta-container">
+<li class="nav-cta-item"><a href="/contact" class="nav-cta-btn">הרשמה</a></li>
+</div>
+</div>
+</nav>
+
+<section class="page-header">
+<div class="container">
+<h1>אודות בית הכנסת אחדות</h1>
+<h3>קהילה חמה, מסורת של נסיעות ושנים של חוויות משותפות</h3>
+</div>
+</section>
+
+<section class="story-section">
+<div class="container">
+<div class="story-content">
+<h2>הסיפור שלנו - מסורת של אחדות וחיבור</h2>
+<p>בית הכנסת אחדות הוא יותר מסתם מקום תפילה - זו קהילה חיה ופועמת של משפחות, חברים ואנשים שחולקים ערכים משותפים של אמונה, מסורת וחיבור קהילתי. הקהילה שלנו התחילה לפני כמעט עשרים שנה כקבוצה קטנה של משפחות שחיפשו מקום חם ומקבל, ומאז גדלה והתפתחה לקהילה משגשגת ותוססת.</p>
+<p>לאורך השנים, בית הכנסת אחדות הפך לבית שני עבור מאות משפחות. אנחנו לא רק מתפללים יחד - אנחנו חוגגים יחד, לומדים יחד, תומכים זה בזה בשמחות ובאתגרים, ויוצרים קשרים עמוקים ומשמעותיים שנמשכים לאורך שנים.</p>
+<p>אחד הדברים המיוחדים ביותר בקהילה שלנו הוא המסורת של הנסיעות השנתיות. לפני כשתריסר שנים, הנהגת בית הכנסת החליטה לארגן טיול קהילתי ראשון לאירופה. הרעיון היה פשוט אך עמוק - ליצור הזדמנות לחברי הקהילה לבלות זמן איכות יחד מחוץ למסגרת הרגילה, להתחבר במסגרת שונה ומרעננת, וליצור זיכרונות משותפים שיחזקו את הקשרים הקהילתיים.</p>
+<p>הנסיעה הראשונה הייתה הצלחה מסחררת. משפחות שהכירו זו את זו רק שטחית מבית הכנסת, מצאו את עצמן יוצרות חברויות עמוקות. ילדים שגדלו יחד בטיול הפכו לחברים לכל החיים. וההרגשה של שייכות לקהילה התחזקה באופן משמעותי.</p>
+<p>מאז, הנסיעה השנתית הפכה למסורת אהובה ומיוחלת. כל שנה אנחנו בוחרים יעד חדש ומרגש באירופה, מתכננים בקפידה מסלול שמשלב בין תוכן רוחני עשיר, אתרים מרהיבים, וזמן איכות משותף. משפחות רבות מתכננות את השנה שלהן סביב הנסיעה הזו, והיא הפכה לאחד מאירועי השיא של הקהילה.</p>
+</div>
+</div>
+</section>
+
+<section class="values-section">
+<div class="container">
+<h2>הערכים שלנו - מה מניע אותנו</h2>
+<div class="values-grid">
+<div class="value-card">
+<div class="value-icon">
+<i class="fas fa-heart"></i>
+</div>
+<h3>אחדות וקהילתיות</h3>
+<p>אנחנו מאמינים בכוח של קהילה מגובשת. כל אחד מחברי הקהילה הוא חלק חשוב מהמשפחה הגדולה שלנו, ואנחנו פועלים ליצור סביבה של קבלה, תמיכה ואהבת חינם.</p>
+</div>
+<div class="value-card">
+<div class="value-icon">
+<i class="fas fa-book-open"></i>
+</div>
+<h3>תורה ומסורת</h3>
+<p>אנחנו שומרים על המסורת היהודית העשירה שלנו, תוך כדי התאמה לחיים המודרניים. לימוד תורה, שמירת מצוות וחיבור למורשת הם חלק בלתי נפרד מזהות הקהילה.</p>
+</div>
+<div class="value-card">
+<div class="value-icon">
+<i class="fas fa-users"></i>
+</div>
+<h3>משפחתיות וחמימות</h3>
+<p>בית הכנסת אחדות הוא בית לכל משפחה. אנחנו יוצרים אווירה חמה ומקבלת שבה כל אחד מרגיש שייך, נשמע ואהוב. החברויות שנוצרות כאן הן לכל החיים.</p>
+</div>
+<div class="value-card">
+<div class="value-icon">
+<i class="fas fa-hands-helping"></i>
+</div>
+<h3>חסד וצדקה</h3>
+<p>אנחנו מאמינים בחשיבות של עזרה הדדית ותמיכה בנזקקים. הקהילה שלנו פעילה במיזמי חסד שונים ותומכת בחברים בזמנים טובים ופחות טובים.</p>
+</div>
+<div class="value-card">
+<div class="value-icon">
+<i class="fas fa-globe"></i>
+</div>
+<h3>חוויות משותפות</h3>
+<p>אנחנו מאמינים שחוויות משותפות מחזקות קשרים. הנסיעות השנתיות, האירועים הקהילתיים והפעילויות המשותפות יוצרים זיכרונות וקשרים שנמשכים לדורות.</p>
+</div>
+<div class="value-card">
+<div class="value-icon">
+<i class="fas fa-seedling"></i>
+</div>
+<h3>צמיחה והתפתחות</h3>
+<p>אנחנו מעודדים צמיחה אישית ורוחנית של כל חבר קהילה. באמצעות שיעורים, סדנאות ומפגשים, אנחנו מספקים כלים לחיזוק האמונה והערכים.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="trips-tradition">
+<div class="container">
+<h2>מסורת הנסיעות השנתיות - למעלה מעשור של חוויות</h2>
+<div class="trips-content">
+<p>הנסיעות הקהילתיות השנתיות של בית הכנסת אחדות הן הרבה יותר מסתם טיולים - הן חוויה משנת חיים שמחזקת את הקשרים בין חברי הקהילה ויוצרת זיכרונות משותפים שנשארים לנצח. לאורך השנים, ביקרנו ביעדים מרהיבים ברחבי אירופה, וכל נסיעה הייתה ייחודית ומיוחדת בפני עצמה.</p>
+<p>הנסיעות שלנו מתוכננות בקפידה כדי לשלב בין מספר אלמנטים חשובים: תוכן רוחני עמוק עם ביקורים באתרים יהודיים היסטוריים ומשמעותיים, חוויות תיירותיות מרהיבות באתרים המפורסמים ביותר באירופה, זמן איכות משותף בין חברי הקהילה, ויצירת אווירה של חמימות, שמחה וקהילתיות.</p>
+<p>כל נסיעה כוללת תפילות משותפות במקומות מיוחדים, סעודות שבת קהילתיות בלתי נשכחות, שיעורי תורה ומפגשים רוחניים עם רבנים ומדריכים מקומיים, וכמובן הרבה זמן לשיחות, צחוקים וחיבור בין המשפחות.</p>
+<p>המשוב שאנחנו מקבלים מהמשתתפים בנסיעות הוא תמיד מרגש ומחמם את הלב. משפחות מספרות על הקשרים החדשים שנוצרו, על החוויות המשותפות שחיזקו את תחושת השייכות לקהילה, ועל הרגעים המיוחדים שנשארו איתם לאורך זמן. ילדים שהשתתפו בנסיעות הפכו לחברים קרובים, והורים מצאו קהילת תמיכה חזקה ומשמעותית.</p>
+<p>השנה, אנחנו מתרגשים להזמין אתכם לנסיעה השנתית לאוסטריה ביוני 2024. זו תהיה נסיעה מיוחדת במינה, עם מסלול מרהיב שכולל את היעדים היפים והמשמעותיים ביותר באוסטריה. אנחנו מזמינים אתכם להצטרף למסורת המיוחדת הזו ולהיות חלק מהקהילה החמה והמגובשת שלנו.</p>
+</div>
+</div></section>
+
+<section class="community-activities">
+<div class="container">
+<h2>פעילויות קהילתיות לאורך השנה</h2>
+<p>הנסיעה השנתית היא רק חלק מהפעילות הקהילתית העשירה שלנו. לאורך כל השנה, אנחנו מארגנים מגוון רחב של אירועים ופעילויות שמחזקים את הקשרים הקהילתיים ויוצרים תחושת שייכות:</p>
+<div class="activities-list">
+<div class="activity-item">
+<h3>תפילות ושיעורי תורה</h3>
+<p>תפילות קבועות בכל ימות השבוע, שיעורי תורה מגוונים לכל הגילאים, ומפגשי לימוד בחברותא. אנחנו מציעים תכנים רוחניים עשירים המתאימים לכל רמה ורקע.</p>
+</div>
+<div class="activity-item">
+<h3>אירועי חגים ומועדים</h3>
+<p>חגיגות משותפות בכל החגים - סעודות חג מפוארות, פעילויות לילדים, ואירועים מיוחדים שמחזקים את החיבור למסורת ולקהילה.</p>
+</div>
+<div class="activity-item">
+<h3>פעילויות משפחתיות</h3>
+<p>טיולים קצרים, פיקניקים משפחתיים, אירועי ספורט ופנאי, ופעילויות שמיועדות לחזק את הקשרים בין המשפחות בקהילה.</p>
+</div>
+<div class="activity-item">
+<h3>מיזמי חסד</h3>
+<p>פרויקטים קהילתיים של עזרה הדדית, ביקור חולים, תמיכה במשפחות נזקקות, והתנדבות במיזמים חברתיים שונים.</p>
+</div>
+<div class="activity-item">
+<h3>פעילויות נוער וילדים</h3>
+<p>תנועת נוער פעילה, מפגשים חברתיים לילדים ובני נוער, ופעילויות חינוכיות ומהנות שמחזקות את הזהות היהודית והקהילתית של הדור הצעיר.</p>
+</div>
+<div class="activity-item">
+<h3>סדנאות והרצאות</h3>
+<p>מפגשים עם אנשי רוח, הרצאות בנושאים מגוונים, סדנאות חינוכיות, ופעילויות העשרה תרבותית ורוחנית.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="join-community">
+<div class="container">
+<h2>הצטרפו לקהילה שלנו</h2>
+<p>בית הכנסת אחדות מזמין משפחות חדשות להצטרף לקהילה החמה והמגובשת שלנו. אם אתם מחפשים מקום שבו תרגישו בבית, שבו תמצאו חברים אמיתיים ותחושת שייכות, ושבו תוכלו לחזק את הזהות היהודית והקהילתית שלכם - בואו לבקר אותנו.</p>
+<p>אנחנו תמיד שמחים לקבל פנים חדשות ולהכיר משפחות חדשות. בואו לתפילה, הצטרפו לאירוע קהילתי, או פשוט צרו איתנו קשר - נשמח לפגוש אתכם ולספר לכם עוד על הקהילה המיוחדת שלנו.</p>
+<p>והכי חשוב - אל תפספסו את ההזדמנות להצטרף לנסיעה השנתית שלנו לאוסטריה ביוני 2024. זו הזדמנות נפלאה להכיר את הקהילה, ליצור קשרים חדשים, וליהנות מחוויה בלתי נשכחת של נסיעה קהילתית מיוחדת.</p>
+<div class="join-cta">
+<a href="/contact" class="btn-primary">הירשמו לנסיעה</a>
+</div>
+</div>
+</section>
+
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 בית הכנסת אחדות. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="privacy.html" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="accessibility.html" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="terms.html" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות <a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = 'ab3653a1-ae2e-4039-ac6a-62a91e1846fc';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          header.style.display = 'block';
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+    <script src="script.js"></script>
+</body></html>
